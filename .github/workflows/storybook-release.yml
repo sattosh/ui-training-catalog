@@ -44,7 +44,7 @@ jobs:
         run: npm run build-storybook
 
       - name: artifact
-        uses: actions/artifact@v4
+        uses: actions/upload-artifact@v4
         with:
           name: github-pages
           path: storybook-static
