@@ -8,8 +8,8 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "sb dev -p 6006",
+    "build-storybook": "sb build"
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
@@ -20,6 +20,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
+    "@storybook/cli": "^7.6.8",
+    "@storybook/react-vite": "^7.6.8",
     "@storybook/addon-actions": "^7.6.8",
     "@storybook/addon-essentials": "^7.6.8",
     "@storybook/addon-interactions": "^7.6.8",
